@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+    <style>
+
+        body{
+            background-color: rgb(190, 190, 190);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }     
+        
+        h1{
+            color: yellow;
+        }
+
+        p{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número'))  // String 
+        //Podemos fazer a conversão de string para number utilizando o Number.parseFloat (quando você quer realmente utilizar numeros reais) ou o Number.parseInt (quando você quer realmente usar numeros inteiros) ou deixar a linguagem saber se o número é inteiro ou real e fazer a conversão sozinha usando apenas "Number"
+
+        //E para converter número em string pode colocar "String(n) ou n.tostring(). ps: esse "n" significa o  que quer colocar para virar uma string
+
+        var n2 = Number(window.prompt('Digite outro número')) // String
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) //Concatenação
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras. <br/> `) 
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+        document.write(`Seu nome em maiúsculas é ${nome.toLowerCase()}`)
+
+        //Podemos dar atributos para a string, deixar ela em maiúsculo com o comando '.toUpperCase()' em minúsculo '.toLowerCase' e quantas letras tem a string com o comando '.length'
+
+        //${variavel} é um modelo chamado de template string que deixa muito mais fácil e organizado trabalhar com variavel na frase em precisar usar Concatenação (+) e deixar a frase muito confusa
+
+        /*
+           var n1 = 1545.5 
+           n1.toFixed(2) (colocar casas decimais, apenas numeros) '1545.50'
+           n1.toFixed(2).replace('.', ',') (trocar um item por outro) Ex: '1545.50' para '1545,50'
+           n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) (mostrar em moeda (real, euro, dollar etc))  'n1' é a variavel    
+        */
+    </script>
+    
+</body>
+</html>
