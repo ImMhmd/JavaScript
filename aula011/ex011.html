@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou Brazuca</title>
+</head>
+<body>
+    <h1>Descobrindo se você é estrangeiro ou brazuca</h1>
+    Escreva seu país: <input type="text" name="país" id="país">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        
+        function calcular(){
+          let país = window.document.querySelector('input#país')  
+          let res = window.document.querySelector('div#res')
+          let val = (país.value)
+          res.innerHTML = `<p>Você mora em/no(a) ${val} e </p>`
+
+            if(val == 'Brasil'){ 
+                res.innerHTML += `<p>Você é brazuca</p>`  
+            } else{
+             res.innerHTML += `<p>Você é gringo</p>`  
+            }
+         }
+         
+
+
+    </script>
+    
+</body>
+</html>
