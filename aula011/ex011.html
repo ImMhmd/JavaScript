@@ -16,7 +16,7 @@
         function calcular(){
           let país = window.document.querySelector('input#país')  
           let res = window.document.querySelector('div#res')
-          let val = (país.value)
+          let val = String (país.value)
           res.innerHTML = `<p>Você mora em/no(a) ${val} e </p>`
 
             if(val == 'Brasil'){ 
