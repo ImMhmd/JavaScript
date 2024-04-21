@@ -11,9 +11,10 @@ function verificar(){
         let fsex = document.getElementsByName('radsex')
         let idade = ano - Number(fano.value)
         let genero = ''
-        let img = document.createElement('img')
+        let img = document.createElement('img') // Podemos criar elementos dentro do próprio JavaScript com o comando "document.createElement('tag desejada')"
 
-        img.setAttribute('id', 'foto')
+
+        img.setAttribute('id', 'foto') // E dar atributos como ID, CLASS e o nome, que pode também ser personalizado no CSS
 
         if (fsex[0].checked){
             genero = 'Homem'
@@ -58,7 +59,7 @@ function verificar(){
 
         res.style.textAlign = 'center'
         res.innerHTML = `${genero} com ${idade} anos. <br>`
-        res.appendChild(img)
+        res.appendChild(img) // <-- Para que um elemento que foi declarado no JavaScript apareça em um momento desejavel, você precisa "falar" para o código com comando 'variável'.appendChild(tag desejavel)
 
        
 
