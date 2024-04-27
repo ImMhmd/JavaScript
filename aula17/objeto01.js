@@ -6,8 +6,12 @@ engordar(p=0){
     this.peso += p
 }}
 
+let s = 'Javascript'
+
 amigo.engordadr(2)
 console.log(amigo.nome)
+
+s.toUpperCase()
 
 /*
 
