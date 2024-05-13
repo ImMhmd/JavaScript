@@ -8,7 +8,7 @@ engordar(p=0){
 
 let s = 'Javascript'
 
-amigo.engordadr(2)
+amigo.engordar(2)
 console.log(amigo.nome)
 
 
